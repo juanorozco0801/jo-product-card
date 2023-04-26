@@ -23,7 +23,9 @@ export interface IProps {
 
 export const ProductCard = ({ product, children, className, style, onChange, value, initialValues }: IProps) => {
 
-  const { counter, increasedBy, maxCount, isMaxCountReached, reset } = useProduct( { onChange, product, value, initialValues } );
+  const { counter, increasedBy, maxCount, isMaxCountReached, reset } = useProduct( {
+    onChange, product, value, initialValues
+  });
 
 
   return (
